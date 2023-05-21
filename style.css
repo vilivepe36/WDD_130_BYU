@@ -1,20 +1,71 @@
-#background {
-    height: 725px;
+*{
+    box-sizing: border-box;
 }
-div id{
+
+#content {
     max-width:1600px
 }
+
 body {
-    background-color:#A3B18A
+    background-color: rgb(204, 204, 204);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+h2 {
+    margin: 0;
+}
+
 header {
     background-color: #233D4D
 }
-nav a:hover {
-    background-color: wheat
+.container{
+    max-width: 1100px;
+    margin: auto;
+    
 }
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+.rivers-card, .camping-card, .rapids-card, .mountains{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-size: 100%;
+    background-position: center center;
+    margin: 200px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: rgb(252, 249, 244)
+}
+#logo_link   {padding-top: 5px;}
+
 .book, .join {
-    background-color: #3A5A40
+    background-color: #faefe1;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #a3d9c4;
+}
+main section img {
+    box-sizing: border-box;
 }
 .book:hover, .join:hover {
     background-color: #344E41
@@ -23,12 +74,17 @@ nav a:hover {
     background-color:#387D7A
 }
 .msg {
+    padding: 35px;
     background-color: #588157
 }
 footer {
-    background-color: #FCCA46
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: #f0eadc
+    
 }
 .home-title{
+    margin-top: 10px;
     background-color:black
 }
 h4{
@@ -38,6 +94,7 @@ h4{
     background-color:#32936F
 }
 .msg p{
+    padding-bottom: 15px;
     background-color:#32936F
 }
 footer a{
@@ -48,32 +105,30 @@ footer a:hover {
     color: #d9c2a3;
 }
 .icon{
+    padding-top: 10px;
     width: 50px;
 }
 .logo {
     width: 50px;
+    align-content: start;
 }
 #hero-img{
     width: 100px;
+    align-items: flex-start;
+    text-align: right;
 }
-body {
-    text-align: center;
-    color: #fcfbfb;
-    text-decoration: none;
-}    
-.book, .join {
-    text-align: center;
-    color: #E9C46A;
-    text-decoration: slategray;
-}
+ 
 footer a{
+    padding-top: 15px;
     text-align: center;
-    color: goldenrod;
+    color: rgb(155, 182, 178);
     text-decoration: none;
 }
 footer p {
+    
     font-size: 1.2em;
 }    
 footer p a:hover {
+    padding-top: 15px;
     text-decoration: underline;
 }   
