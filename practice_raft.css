@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#logo_link {
+    width: 5vh;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    
+    
+}
+
+.logo {
+    width: 50px;
+  height: 50px
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+
