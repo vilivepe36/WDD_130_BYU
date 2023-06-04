@@ -24,6 +24,7 @@ header {
 
 img .logo {
     width: 80 px;
+    background-image: url("images/logo.png");
 }
 
 #logo_link{
