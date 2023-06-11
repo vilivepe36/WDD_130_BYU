@@ -24,11 +24,15 @@ button{
     background-color: slateblue;
 }
 button:hover{
-    background-color: rgb(92, 31, 150);
+    background-color: rgb(95, 82, 184);
 }
 .container{
     max-width: 1100px;
     margin: auto;
+}
+.color-acento{
+    color: blueviolet;
+
 }
 header{
     background-color: rgb(248, 248, 248);
@@ -57,9 +61,9 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(12, 12, 12);
 }
-header a :hover{
+header a:hover {
     color:slateblue
 }
 #hero{
@@ -80,3 +84,167 @@ header a :hover{
 
 
 }
+#hero h1{
+    color: white;
+}
+
+
+#About-Us .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+
+}
+#Our-tutories{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+#Our-tutories .container{
+    padding: 100px 0px;
+
+}
+#Our-tutories h2{
+    margin-top: 0;
+    font-size: 3em;
+
+}
+#Our-tutories p{
+    display: none;
+}
+#Our-tutories .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 20px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/math3_elt.jpeg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/geometria-plana-1.png");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/Estadística-y-estadisticas.jpg");
+
+}
+#characteristics .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#characteristics li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#Enter-Now{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30,30);
+    color: white;
+    height: 90vh;
+}
+#Enter-Now button{
+    font-size: 1.7em;
+}
+
+footer{
+    background-color: rgb(230, 230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgba(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #About-Us .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #About-Us .text{
+        width: 50%;
+        max-width: 600px;
+        padding-left: 30px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #About-Us h2{
+        margin-top: 0px;
+    }
+    #About-Us .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("images/aprende.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+    }
+    #Our-tutories .programs{
+        display: flex;
+        justify-content: center;
+    }
+    #Our-tutories p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #Our-tutories h3{
+        margin-top: 0;
+    }
+    #Our-tutories .carta{
+        padding: 15px;
+    }
+
+    }
+
+
+
+
