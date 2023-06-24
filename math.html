@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <style>
-  *{
+ *{
     box-sizing: border-box;
 }
 
@@ -117,6 +117,7 @@ header a:hover {
 #Our-tutories p{
     display: none;
 }
+
 #Our-tutories .carta{
     background-position: center center;
     background-size: cover;
@@ -244,14 +245,47 @@ footer .container{
         margin-top: 0;
     }
     #Our-tutories .carta{
-        padding: 15px;
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(rgb(185, 34, 185));
     }
 
+    #characteristics{
+        background-image: url("images/mathpc.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 120px;
+
+    }
+    #characteristics .container{
+        text-align: initial;
+    }
+    #characteristics ul{
+        margin-left: 100px;
+
+    }
+    #Enter-Now{
+        font-size: 2.5em;
+
+    }
+    #Enter-Now button{
+        font-size: 1em;
+
+    }
+    footer .container{
+        justify-content: center;
+    }
+   
+
+    }
+    @media(min-width: 1000px){
+        #characteristics{
+            background-position-x: calc(100vw - 600px);
+        }
     }
 
   </style>
   
-    <title>Learn Math</title>
+  <title>Learn Math</title>
     <link rel="stylesheet" href="math.css">
 </head>
 <body>
@@ -262,6 +296,7 @@ footer .container{
                 <a href="#About-Us">About Us</a>
                 <a href="#Our-tutories">Our Tutories</a>
                 <a href="#characteristics">Characterístics</a>
+                <a href="contactus.html">Contact Us</a>
             </nav>
 
         </div>
@@ -355,7 +390,7 @@ footer .container{
     </section>
         
     <section id="Enter-Now">
-        <h2>Ready for Learning</h2>
+        <h2>Ready for Learning?</h2>
         <form action="https://www.youtube.com/watch?v=LeS7It4XCog&t=15s">
             <button>Apply now!</button>
         </form>
@@ -363,7 +398,9 @@ footer .container{
     </section>
     <footer>
         <div class="container">
-            <p>Contact us </p>
+            <form action="contactus.html">
+                <button>Contact Us</button>
+            </form>
 
         </div>
     </footer>
